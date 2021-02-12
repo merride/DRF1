@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'drf1.apps.DrftestConfig',
+    'drftest.apps.DrftestConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +76,14 @@ WSGI_APPLICATION = 'drf1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME':'drf1',
+        'USER': 'root',
+        'PASSWORD': '1234',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
