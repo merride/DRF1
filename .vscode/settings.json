@@ -1,4 +1,4 @@
 {
     "editor.fontSize": 16,
-    "python.venvPath": "~/.conda/envs"
+    "python.venvPath": "~/.conda/envs/django3"
 }

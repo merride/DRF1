@@ -25,7 +25,7 @@ SECRET_KEY = '&&j#wpx@fnw0+7%+2jgcj4vqi39+2ev6%i4(q8m2@alb3e#kfp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.56.101']
+ALLOWED_HOSTS = ['.merride.com']
 
 
 # Application definition
@@ -80,10 +80,11 @@ DATABASES = {
         #'ENGINE': 'django.db.backends.sqlite3',
         'ENGINE': 'django.db.backends.mysql',
         #'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME':'drf1',
-        'USER': 'root',
-        'PASSWORD': '1234',
-        'HOST': '127.0.0.1',
+        'NAME':'drf1_db4free',
+        'USER': 'drf1_test',
+        'PASSWORD': 'drf!2345',
+#       'HOST': 'mydb.merride.com',
+        'HOST': 'db4free.net',
         'PORT': '3306',
     }
 }
@@ -113,14 +114,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+#TIME_ZONE = 'UTC'
+
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
-
+#USE_TZ = True
+USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
